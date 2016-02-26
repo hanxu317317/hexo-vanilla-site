@@ -2,6 +2,7 @@
 menu:
   Home: /
   Archives: /archives
+  Source: https://github.com/leesei/hexo-vanilla-site
 rss: /atom.xml
 
 # Content
