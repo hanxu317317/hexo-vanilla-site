@@ -48,6 +48,8 @@
         
           <a class="main-nav-link" href="/hexo-vanilla-site/archives">Archives</a>
         
+          <a class="main-nav-link" href="https://github.com/leesei/hexo-vanilla-site">Source</a>
+        
       </nav>
       <nav id="sub-nav">
         
@@ -63,6 +65,85 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-1756" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/hexo-vanilla-site/2016/02/26/1756/" class="article-date">
+  <time datetime="2016-02-26T03:18:43.000Z" itemprop="datePublished">2016-02-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/hexo-vanilla-site/2016/02/26/1756/">1756</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://github.com/hexojs/hexo/issues/1756" target="_blank" rel="external">Proposal to add mark (line highlight) support to code block tag plugin · Issue #1756 · hexojs/hexo</a><br><a href="https://github.com/hexojs/hexo/pull/1766" target="_blank" rel="external">add mark option to code blocks by greg-js · Pull Request #1766 · hexojs/hexo</a><br><a href="https://github.com/hexojs/hexo-util/issues/11" target="_blank" rel="external">Add mark support to highlight() · Issue #11 · hexojs/hexo-util</a></p>
+<p>Note: Theme’s style should support <code>.highlight.line.marked</code> (recommend to use the selection or current line color).</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line marked"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</div><div class="line"></div><div class="line"><span class="keyword">const</span> hostname = <span class="string">'127.0.0.1'</span>;</div><div class="line"><span class="keyword">const</span> port = <span class="number">1337</span>;</div><div class="line"></div><div class="line">http.createServer((req, res) =&gt; &#123;</div><div class="line marked">  res.writeHead(<span class="number">200</span>, &#123; <span class="string">'Content-Type'</span>: <span class="string">'text/plain'</span> &#125;);</div><div class="line marked">  res.end(<span class="string">'Hello World\n'</span>);</div><div class="line">&#125;).listen(port, hostname, () =&gt; &#123;</div><div class="line marked">  <span class="built_in">console</span>.log(<span class="string">`Server running at http://<span class="subst">$&#123;hostname&#125;</span>:<span class="subst">$&#123;port&#125;</span>/`</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://leesei.github.io/hexo-vanilla-site/hexo-vanilla-site/2016/02/26/1756/" data-id="cil3k10ea00082aszqykqnuby" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-1562" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/hexo-vanilla-site/2016/02/24/1562/" class="article-date">
+  <time datetime="2016-02-24T10:00:37.000Z" itemprop="datePublished">2016-02-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/hexo-vanilla-site/2016/02/24/1562/">1562</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://github.com/hexojs/hexo/issues/1562" target="_blank" rel="external">wrong image file name convertion when there are spaces in file name · Issue #1562 · hexojs/hexo</a><br><a href="https://github.com/hexojs/hexo/issues/1774" target="_blank" rel="external">Path of <code>PostAsset</code> · Issue #1774 · hexojs/hexo</a></p>
+<p>enable <code>post_asset_folder</code> for this test</p>
+<img src="/hexo-vanilla-site/2016/02/24/1562/spaced post asset.png" alt="spaced post asset" title="spaced post asset">
+<p><img src="/hexo-vanilla-site/assets/images/spaced global asset.png" alt="spaced global asset"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://leesei.github.io/hexo-vanilla-site/hexo-vanilla-site/2016/02/24/1562/" data-id="cil3k10dl00042asz3qiqhmql" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-1447" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -87,15 +168,15 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><a href="https://github.com/hexojs/hexo/issues/1447" target="_blank" rel="external">{ } in the url inside parens cause FATAL error · Issue #1447 · hexojs/hexo</a></p>
-<h3 id="Use-link-tag"><a href="#Use-link-tag" class="headerlink" title="Use link tag"></a>Use link tag</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% link &quot;postcircumfix &#123; &#125;&quot; http://doc.perl6.org/routine/&#123;%20&#125;#postcircumfix_&#123;_&#125; %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Use-link-tag"><a href="#Use-link-tag" class="headerlink" title="Use link tag"></a>Use link tag</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% link &quot;postcircumfix &#123; &#125;&quot; http://doc.perl6.org/routine/&#123;%20&#125;#postcircumfix_&#123;_&#125; %&#125;</div></pre></td></tr></table></figure>
 <a href="http://doc.perl6.org/routine/{%20}#postcircumfix_{_}" target="_blank" rel="external">postcircumfix { }</a>
-<h3 id="URLEncode-all-the-way"><a href="#URLEncode-all-the-way" class="headerlink" title="URLEncode all the way"></a>URLEncode all the way</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[postcircumfix &#123; &#125;](http://doc.perl6.org/routine/%7B%20%7D%23postcircumfix_%7B_%7D)</span><br></pre></td></tr></table></figure>
+<h3 id="URLEncode-all-the-way"><a href="#URLEncode-all-the-way" class="headerlink" title="URLEncode all the way"></a>URLEncode all the way</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[postcircumfix &#123; &#125;](http://doc.perl6.org/routine/%7B%20%7D%23postcircumfix_%7B_%7D)</div></pre></td></tr></table></figure>
 <p><a href="http://doc.perl6.org/routine/%7B%20%7D%23postcircumfix_%7B_%7D" target="_blank" rel="external">postcircumfix { }</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://leesei.github.io/hexo-vanilla-site/hexo-vanilla-site/2016/02/24/1447/" data-id="cil0lyv4l0001qtszigakh5ep" class="article-share-link">Share</a>
+      <a data-url="http://leesei.github.io/hexo-vanilla-site/hexo-vanilla-site/2016/02/24/1447/" data-id="cil3k10d500022aszramihag7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -128,15 +209,15 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><a href="https://github.com/hexojs/hexo/issues/1543" target="_blank" rel="external">plain codeblock的行数不正确 · Issue #1543 · hexojs/hexo</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">0:002&gt; kb = 0095f168</span><br><span class="line">ChildEBP RetAddr  Args to Child              </span><br><span class="line">（略）</span><br><span class="line">0095f364 00000000 0095f37c 0095f39c 0095f37c ntdll!KiUserExceptionDispatcher+0xf</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">0:002&gt; kb = 0095f168</span><br><span class="line">ChildEBP RetAddr  Args to Child              </span><br><span class="line">（略）</span><br><span class="line">0095f364 00000000 0095f37c 0095f39c 0095f37c ntdll!KiUserExceptionDispatcher+0xf</span><br></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">0:002&gt; kb = 0095f168</div><div class="line">ChildEBP RetAddr  Args to Child              </div><div class="line">（略）</div><div class="line">0095f364 00000000 0095f37c 0095f39c 0095f37c ntdll!KiUserExceptionDispatcher+0xf</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">0:002&gt; kb = 0095f168</div><div class="line">ChildEBP RetAddr  Args to Child              </div><div class="line">（略）</div><div class="line">0095f364 00000000 0095f37c 0095f39c 0095f37c ntdll!KiUserExceptionDispatcher+0xf</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="number">1</span></div><div class="line"><span class="number">2</span></div><div class="line"><span class="number">3</span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://leesei.github.io/hexo-vanilla-site/hexo-vanilla-site/2016/02/23/1543/" data-id="cil0lyv4p0002qtszjbg24u0q" class="article-share-link">Share</a>
+      <a data-url="http://leesei.github.io/hexo-vanilla-site/hexo-vanilla-site/2016/02/23/1543/" data-id="cil3k10dg00032aszrbdbjr4d" class="article-share-link">Share</a>
       
       
     </footer>
@@ -175,7 +256,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://leesei.github.io/hexo-vanilla-site/hexo-vanilla-site/2016/02/23/1277/" data-id="cil0lyv4b0000qtszscxe7bmg" class="article-share-link">Share</a>
+      <a data-url="http://leesei.github.io/hexo-vanilla-site/hexo-vanilla-site/2016/02/23/1277/" data-id="cil3k10d000012asz2l5svstg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -208,24 +289,24 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><a href="https://github.com/hexojs/hexo/issues/1592" target="_blank" rel="external">Space before fenced code · Issue #1592 · hexojs/hexo</a></p>
-<h2 id="Backtick"><a href="#Backtick" class="headerlink" title="Backtick"></a>Backtick</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<h2 id="Codeblock"><a href="#Codeblock" class="headerlink" title="Codeblock"></a>Codeblock</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h2 id="Backtick"><a href="#Backtick" class="headerlink" title="Backtick"></a>Backtick</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo init</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+<h2 id="Codeblock"><a href="#Codeblock" class="headerlink" title="Codeblock"></a>Codeblock</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo init</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
 <h2 id="Within-list"><a href="#Within-list" class="headerlink" title="Within list"></a>Within list</h2><ol>
 <li>step 1</li>
 <li>step 2</li>
 <li><p>step 3</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo init</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
 </li>
 <li><p>step 4</p>
 </li>
-<li>step 5<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
+<li>step 5<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo init</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure></li>
 <li>step 6</li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://leesei.github.io/hexo-vanilla-site/hexo-vanilla-site/2016/02/23/1592/" data-id="cil0lyv4t0003qtszw5d475r6" class="article-share-link">Share</a>
+      <a data-url="http://leesei.github.io/hexo-vanilla-site/hexo-vanilla-site/2016/02/23/1592/" data-id="cil3k10dp00052aszfbrp58cc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -259,12 +340,12 @@
       
         <p><a href="https://github.com/hexojs/hexo/issues/1755" target="_blank" rel="external">https://github.com/hexojs/hexo/issues/1755</a></p>
 <p>This file has Windows endline</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Works<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"row-fluid block-grid-4"</span>&gt;</span></span><br><span class="line">  &#123;&#123;#each model as |w index|&#125;&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">h5</span>&gt;</span>&#123;&#123;w.title&#125;&#125;<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>Owner: &#123;&#123;w.owner&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123;#link-to "work" w.id&#125;&#125;<span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">"img-responsive img-rounded"</span> <span class="attr">src</span>=<span class="string">&#123;&#123;w.image&#125;&#125;</span> <span class="attr">alt</span>=<span class="string">&#123;&#123;w.title&#125;&#125;</span>&gt;</span>&#123;&#123;/link-to&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  &#123;&#123;/each&#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Works<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"row-fluid block-grid-4"</span>&gt;</span></div><div class="line">  &#123;&#123;#each model as |w index|&#125;&#125;</div><div class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">h5</span>&gt;</span>&#123;&#123;w.title&#125;&#125;<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>Owner: &#123;&#123;w.owner&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123;#link-to "work" w.id&#125;&#125;<span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">"img-responsive img-rounded"</span> <span class="attr">src</span>=<span class="string">&#123;&#123;w.image&#125;&#125;</span> <span class="attr">alt</span>=<span class="string">&#123;&#123;w.title&#125;&#125;</span>&gt;</span>&#123;&#123;/link-to&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  &#123;&#123;/each&#125;&#125;</div><div class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://leesei.github.io/hexo-vanilla-site/hexo-vanilla-site/2016/02/23/1755/" data-id="cil0lyv500005qtszabpea8q3" class="article-share-link">Share</a>
+      <a data-url="http://leesei.github.io/hexo-vanilla-site/hexo-vanilla-site/2016/02/23/1755/" data-id="cil3k10e200072aszb2n2w5r7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -312,7 +393,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://leesei.github.io/hexo-vanilla-site/hexo-vanilla-site/2016/02/22/1741/" data-id="cil0lyv4x0004qtsz3uxdqsqe" class="article-share-link">Share</a>
+      <a data-url="http://leesei.github.io/hexo-vanilla-site/hexo-vanilla-site/2016/02/22/1741/" data-id="cil3k10du00062aszbksidtse" class="article-share-link">Share</a>
       
       
     </footer>
@@ -352,6 +433,14 @@
       <ul>
         
           <li>
+            <a href="/hexo-vanilla-site/2016/02/26/1756/">1756</a>
+          </li>
+        
+          <li>
+            <a href="/hexo-vanilla-site/2016/02/24/1562/">1562</a>
+          </li>
+        
+          <li>
             <a href="/hexo-vanilla-site/2016/02/24/1447/">1447</a>
           </li>
         
@@ -361,14 +450,6 @@
         
           <li>
             <a href="/hexo-vanilla-site/2016/02/23/1277/">1277</a>
-          </li>
-        
-          <li>
-            <a href="/hexo-vanilla-site/2016/02/23/1592/">1592</a>
-          </li>
-        
-          <li>
-            <a href="/hexo-vanilla-site/2016/02/23/1755/">1755</a>
           </li>
         
       </ul>
@@ -394,6 +475,8 @@
     <a href="/hexo-vanilla-site/" class="mobile-nav-link">Home</a>
   
     <a href="/hexo-vanilla-site/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="https://github.com/leesei/hexo-vanilla-site" class="mobile-nav-link">Source</a>
   
 </nav>
     
